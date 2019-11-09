@@ -1,0 +1,1 @@
+vhdtdtfi -prj CachePro -o /home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer1to2.vhi -module Multiplexer1to2 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer1to2.vhd 

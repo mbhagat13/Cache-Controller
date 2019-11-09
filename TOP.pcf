@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri Nov 01 12:39:44 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

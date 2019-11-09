@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 cache_control.ngc cache_control.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cache_control_map.ncd cache_control.ngd cache_control.pcf 
+par -w -intstyle ise -ol high -t 1 cache_control_map.ncd cache_control.ncd cache_control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cache_control.twx cache_control.ncd -o cache_control.twr cache_control.pcf 
+bitgen -intstyle ise -f cache_control.ut cache_control.ncd 
+vhdtdtfi -prj CachePro -o /home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhi -module cache_control -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/bram_cache.vhd -lib work str.vhd -lib work Multiplexer2to1.vhd -lib work Multiplexer1to2.vhd -lib work ipcore_dir/ila.vhd -lib work ipcore_dir/icon.vhd -lib work cache_control.vhd 
+vhdtdtfi -prj CachePro -o /home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhi -module cache_control -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/bram_cache.vhd -lib work str.vhd -lib work Multiplexer2to1.vhd -lib work Multiplexer1to2.vhd -lib work ipcore_dir/ila.vhd -lib work ipcore_dir/icon.vhd -lib work cache_control.vhd 

@@ -1,0 +1,1 @@
+vhdtdtfi -prj CachePro -o /home/student1/mbhagat/coe758/CachePro/CachePro/str.vhi -module str -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work str.vhd 

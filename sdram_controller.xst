@@ -1,0 +1,5 @@
+set -tmpdir "/home/student1/mbhagat/coe758/CachePro/CachePro/xst/projnav.tmp"
+set -xsthdpdir "/home/student1/mbhagat/coe758/CachePro/CachePro/xst"
+elaborate
+-ifn sdram_controller.prj
+-ifmt mixed

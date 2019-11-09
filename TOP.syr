@@ -1,0 +1,913 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/ipcore_dir/icon.vhd" in Library work.
+Architecture icon_a of Entity icon is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/ipcore_dir/ila.vhd" in Library work.
+Architecture ila_a of Entity ila is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer2to1.vhd" in Library work.
+Architecture behavioral of Entity multiplexer2to1 is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer1to2.vhd" in Library work.
+Architecture behavioral of Entity multiplexer1to2 is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/ipcore_dir/bram_cache.vhd" in Library work.
+Architecture bram_cache_a of Entity bram_cache is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/str.vhd" in Library work.
+Architecture behavioral of Entity str is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/CPU_gen.vhd" in Library work.
+Architecture behavioral of Entity cpu_gen is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" in Library work.
+Architecture behavioral of Entity cache_control is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/sdram_controller.vhd" in Library work.
+Architecture behavioral of Entity sdram_controller is up to date.
+Compiling vhdl file "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CPU_gen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cache_control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sdram_controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Multiplexer2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Multiplexer1to2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <str> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOP> in library <work> (Architecture <behavioral>).
+Entity <TOP> analyzed. Unit <TOP> generated.
+
+Analyzing Entity <CPU_gen> in library <work> (Architecture <behavioral>).
+Entity <CPU_gen> analyzed. Unit <CPU_gen> generated.
+
+Analyzing Entity <cache_control> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" line 151: Instantiating black box module <icon>.
+WARNING:Xst:2211 - "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" line 156: Instantiating black box module <ila>.
+WARNING:Xst:2211 - "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" line 185: Instantiating black box module <bram_cache>.
+WARNING:Xst:790 - "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" line 233: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd" line 235: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <Memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:2679 - Register <Memory<7><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<6><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<5><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<4><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<3><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<2><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<1><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Memory<0><9>> in unit <cache_control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <cache_control> analyzed. Unit <cache_control> generated.
+
+Analyzing Entity <Multiplexer2to1> in library <work> (Architecture <behavioral>).
+Entity <Multiplexer2to1> analyzed. Unit <Multiplexer2to1> generated.
+
+Analyzing Entity <Multiplexer1to2> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer1to2.vhd" line 43: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <w>
+Entity <Multiplexer1to2> analyzed. Unit <Multiplexer1to2> generated.
+
+Analyzing Entity <str> in library <work> (Architecture <behavioral>).
+Entity <str> analyzed. Unit <str> generated.
+
+Analyzing Entity <sdram_controller> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/student1/mbhagat/coe758/CachePro/CachePro/sdram_controller.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sdram_mstrb>
+WARNING:Xst:790 - "/home/student1/mbhagat/coe758/CachePro/CachePro/sdram_controller.vhd" line 58: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory2> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "/home/student1/mbhagat/coe758/CachePro/CachePro/sdram_controller.vhd" line 60: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <Memory2> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <sdram_controller> analyzed. Unit <sdram_controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CPU_gen>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/CPU_gen.vhd".
+    Found finite state machine <FSM_0> for signal <st1>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8x25-bit ROM for signal <patOut>.
+WARNING:Xst:737 - Found 1-bit latch for signal <updPat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <cs>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit up counter for signal <patCtrl>.
+    Found 1-bit register for signal <rReg1>.
+    Found 1-bit register for signal <rReg2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CPU_gen> synthesized.
+
+
+Synthesizing Unit <sdram_controller>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/sdram_controller.vhd".
+WARNING:Xst:646 - Signal <sdram_addr_in_sig<15:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x8-bit single-port RAM <Mram_Memory2> for signal <Memory2>.
+    Found 8-bit register for signal <sdram_dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sdram_controller> synthesized.
+
+
+Synthesizing Unit <Multiplexer2to1>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer2to1.vhd".
+Unit <Multiplexer2to1> synthesized.
+
+
+Synthesizing Unit <Multiplexer1to2>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer1to2.vhd".
+Unit <Multiplexer1to2> synthesized.
+
+
+Synthesizing Unit <str>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/str.vhd".
+    Found 1-bit register for signal <strb>.
+    Found 1-bit register for signal <change_clk>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <str> synthesized.
+
+
+Synthesizing Unit <cache_control>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/cache_control.vhd".
+WARNING:Xst:1305 - Output <mstrb> is never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <trig0> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <hit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <ready_out>.
+    Found 10-bit 8-to-1 multiplexer for signal <$varindex0000> created at line 233.
+    Found 8-bit register for signal <addr_cache_bram>.
+    Found 16-bit register for signal <addr_out_sig>.
+    Found 32-bit register for signal <counter>.
+    Found 1-bit register for signal <enable_str>.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0000> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0001> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0002> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0003> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0004> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0005> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0006> created at line 224.
+    Found 8-bit comparator equal for signal <hit$cmp_eq0007> created at line 224.
+    Found 32-bit register for signal <i_value>.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0000> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0001> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0002> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0003> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0004> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0005> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0006> created at line 224.
+    Found 8-bit comparator not equal for signal <i_value$cmp_ne0007> created at line 224.
+    Found 32-bit adder for signal <not0000$add0000> created at line 254.
+    Found 32-bit register for signal <offset_needed>.
+    Found 32-bit adder for signal <offset_needed$share0000>.
+    Found 1-bit register for signal <smux1_bram>.
+    Found 1-bit register for signal <smux2_bram>.
+    Found 3-bit register for signal <STATE>.
+    Found 1-bit register for signal <wen_cache_bram<0>>.
+    Found 1-bit register for signal <wr_out_sig>.
+    Summary:
+	inferred 201 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <cache_control> synthesized.
+
+
+Synthesizing Unit <TOP>.
+    Related source file is "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.vhd".
+WARNING:Xst:646 - Signal <din_cache_cpu> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <TOP> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port RAM                              : 1
+# ROMs                                                 : 1
+ 8x25-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 89
+ 1-bit register                                        : 82
+ 16-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 3
+ 8-bit register                                        : 2
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 16
+ 8-bit comparator equal                                : 8
+ 8-bit comparator not equal                            : 8
+# Multiplexers                                         : 1
+ 10-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_CPU_gen/st1/FSM> on signal <st1[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 001   | 000010
+ 010   | 000100
+ 011   | 001000
+ 100   | 010000
+ 101   | 100000
+-------------------
+Reading core <ipcore_dir/icon.ngc>.
+Reading core <ipcore_dir/ila.ngc>.
+Reading core <ipcore_dir/bram_cache.ngc>.
+Loading core <icon> for timing and area information for instance <sys_icon>.
+Loading core <ila> for timing and area information for instance <sys_ila>.
+Loading core <bram_cache> for timing and area information for instance <cache_mem>.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_0> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_1> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_2> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_3> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_4> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_5> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_6> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_dout_7> (without init value) has a constant value of 0 in block <Inst_sdram_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <i_value_3> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_4> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_5> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_6> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_7> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_8> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_9> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_10> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_11> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_12> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_13> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_14> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_15> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_16> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_17> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_18> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_19> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_20> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_21> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_22> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_23> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_24> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_25> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_26> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_27> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_28> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_29> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_30> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:2677 - Node <i_value_31> of sequential type is unconnected in block <Inst_cache_control>.
+WARNING:Xst:1290 - Hierarchical block <cache_output_mux> is unconnected in block <Inst_cache_control>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <sdram_controller>.
+INFO:Xst:3231 - The small RAM <Mram_Memory2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     clkA           | connected to signal <sdram_mstrb>   | rise     |
+    |     weA            | connected to signal <sdram_wr_rd_in> | high     |
+    |     addrA          | connected to signal <sdram_addr_in> |          |
+    |     diA            | connected to signal <sdram_din>     |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sdram_controller> synthesized (advanced).
+WARNING:Xst:2677 - Node <i_value_3> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_4> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_5> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_6> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_7> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_8> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_9> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_10> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_11> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_12> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_13> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_14> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_15> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_16> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_17> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_18> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_19> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_20> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_21> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_22> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_23> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_24> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_25> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_26> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_27> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_28> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_29> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_30> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <i_value_31> of sequential type is unconnected in block <cache_control>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed RAM                  : 1
+# ROMs                                                 : 1
+ 8x25-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 184
+ Flip-Flops                                            : 184
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 16
+ 8-bit comparator equal                                : 8
+ 8-bit comparator not equal                            : 8
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <offset_needed_5> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_6> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_7> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_8> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_9> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_10> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_11> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_12> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_13> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_14> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_15> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_16> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_17> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_18> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_19> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_20> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_21> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_22> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_23> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_24> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_25> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_26> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_27> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_28> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_29> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_30> of sequential type is unconnected in block <cache_control>.
+WARNING:Xst:2677 - Node <offset_needed_31> of sequential type is unconnected in block <cache_control>.
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <CPU_gen> ...
+
+Optimizing unit <sdram_controller> ...
+
+Optimizing unit <cache_control> ...
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_6> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_5> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_4> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_2> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_1> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_sdram_controller/sdram_dout_0> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_cache_bram_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_cache_bram_5> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<0>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<3>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<3>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<6>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<1>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<6>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<1>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<4>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<4>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<5>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<0>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<5>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_out_sig_5> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_out_sig_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_out_sig_11> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/addr_out_sig_15> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<2>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<7>_3> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<2>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_cache_control/Memory<7>_7> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory28> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory27> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory26> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory25> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory24> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory23> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory22> is unconnected in block <TOP>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_sdram_controller/Mram_Memory21> is unconnected in block <TOP>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<2>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<2>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<2>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<2>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<2>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<2>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<6>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<6>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<6>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<6>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<6>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<6>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<3>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<3>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<3>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<3>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<3>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<3>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<0>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<0>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<0>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<0>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<0>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<0>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<4>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<4>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<4>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<4>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<4>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<4>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<1>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<1>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<1>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<1>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<1>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<1>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<5>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<5>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<7>_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<7>_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<5>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<5>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<7>_4> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<7>_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<5>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<5>_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_cache_control/Memory<7>_5> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <Inst_cache_control/Memory<7>_1> 
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 13.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 112
+ Flip-Flops                                            : 112
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP.ngr
+Top Level Output File Name         : TOP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 1
+
+Cell Usage :
+# BELS                             : 727
+#      GND                         : 4
+#      INV                         : 11
+#      LUT1                        : 88
+#      LUT2                        : 42
+#      LUT2_D                      : 1
+#      LUT3                        : 78
+#      LUT3_D                      : 3
+#      LUT3_L                      : 6
+#      LUT4                        : 226
+#      LUT4_D                      : 3
+#      LUT4_L                      : 7
+#      MUXCY                       : 52
+#      MUXCY_L                     : 59
+#      MUXF5                       : 42
+#      MUXF6                       : 11
+#      VCC                         : 4
+#      XORCY                       : 90
+# FlipFlops/Latches                : 838
+#      FD                          : 328
+#      FDC                         : 1
+#      FDCE                        : 24
+#      FDE                         : 68
+#      FDP                         : 265
+#      FDPE                        : 18
+#      FDR                         : 43
+#      FDRE                        : 67
+#      FDRS                        : 4
+#      FDS                         : 17
+#      LD                          : 2
+#      LDC                         : 1
+# RAMS                             : 10
+#      RAMB16_S1_S36               : 9
+#      RAMB16_S36_S36              : 1
+# Shift Registers                  : 311
+#      SRL16                       : 256
+#      SRL16E                      : 1
+#      SRLC16E                     : 54
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# Others                           : 1
+#      BSCAN_SPARTAN3              : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      627  out of   4656    13%  
+ Number of Slice Flip Flops:            838  out of   9312     8%  
+ Number of 4 input LUTs:                776  out of   9312     8%  
+    Number used as logic:               465
+    Number used as Shift registers:     311
+ Number of IOs:                           1
+ Number of bonded IOBs:                   1  out of    232     0%  
+ Number of BRAMs:                        10  out of     20    50%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                        | Clock buffer(FF name)                                                  | Load  |
+--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+clk                                                                                                                 | BUFGP                                                                  | 1016  |
+Inst_CPU_gen/updPat_or0000(Inst_CPU_gen/updPat_or0000:O)                                                            | NONE(*)(Inst_CPU_gen/updPat)                                           | 2     |
+Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                                        | BUFG                                                                   | 148   |
+Inst_cache_control/sys_icon/CONTROL0<13>(Inst_cache_control/sys_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+Inst_cache_control/sys_icon/U0/iUPDATE_OUT                                                                          | NONE(Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD)                | 1     |
+--------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                   | Buffer(FF name)                                                                                                                         | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+Inst_cache_control/sys_ila/N0(Inst_cache_control/sys_ila/XST_GND:G)                                                                              | NONE(Inst_cache_control/sys_ila/U0/I_DQ.G_DW[0].U_DQ)                                                                                   | 265   |
+Inst_cache_control/sys_icon/CONTROL0<20>(Inst_cache_control/sys_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                             | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG)| 16    |
+Inst_cache_control/sys_icon/U0/U_ICON/U_CMD/iSEL_n(Inst_cache_control/sys_icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                        | NONE(Inst_cache_control/sys_icon/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET)                                                           | 10    |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iCLR(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0)                                                              | 4     |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iCLR(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0)                                                             | 4     |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/iCLR(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_CLEAR:O)              | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_DOUT0)                                                                 | 4     |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/iARM(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD:Q)             | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_FDCE)                                                                   | 2     |
+Inst_cache_control/sys_icon/CONTROL0<13>(Inst_cache_control/sys_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)                             | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_FDPE)                                                                   | 1     |
+Inst_cache_control/sys_icon/U0/U_ICON/iSEL_n(Inst_cache_control/sys_icon/U0/U_ICON/U_iSEL_n:O)                                                   | NONE(Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD)                                                                                 | 1     |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/ACTRESET_pulse(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_RESET_EDGE/I_H2L.U_DOUT:Q)| NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_RISING)                                                                       | 1     |
+Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/iRESET<1>(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_RST/G_RST[1].U_RST:Q)                        | NONE(Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG)                                | 1     |
+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.202ns (Maximum Frequency: 89.268MHz)
+   Minimum input arrival time before clock: 10.256ns
+   Maximum output required time after clock: 0.514ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.762ns (frequency: 102.435MHz)
+  Total number of paths / destination ports: 41594 / 1286
+-------------------------------------------------------------------------
+Delay:               9.762ns (Levels of Logic = 9)
+  Source:            Inst_CPU_gen/patCtrl_0 (FF)
+  Destination:       Inst_cache_control/STATE_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_CPU_gen/patCtrl_0 to Inst_cache_control/STATE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.514   0.988  Inst_CPU_gen/patCtrl_0 (Inst_CPU_gen/patCtrl_0)
+     LUT2:I0->O           20   0.612   0.967  Inst_CPU_gen/patOut<21>1 (addr_cpu_cache<12>)
+     LUT4_D:I2->LO         1   0.612   0.130  Inst_cache_control/hit_cmp_eq0002895_SW0 (N138)
+     LUT3:I2->O            5   0.612   0.607  Inst_cache_control/hit_cmp_eq0002895 (Inst_cache_control/hit_cmp_eq0002)
+     LUT4:I1->O            1   0.612   0.387  Inst_cache_control/i_value_mux0000<0>30_SW1 (N57)
+     LUT4:I2->O            4   0.612   0.529  Inst_cache_control/i_value_mux0000<0>49 (Inst_cache_control/i_value_mux0000<0>)
+     LUT3:I2->O            1   0.612   0.000  Inst_cache_control/mux_4 (Inst_cache_control/mux_4)
+     MUXF5:I1->O           1   0.278   0.000  Inst_cache_control/mux_3_f5 (Inst_cache_control/mux_3_f5)
+     MUXF6:I1->O           1   0.451   0.360  Inst_cache_control/mux_2_f6 (Inst_cache_control/_varindex0000<8>)
+     LUT4:I3->O            1   0.612   0.000  Inst_cache_control/STATE_mux0012<2>541 (Inst_cache_control/STATE_mux0012<2>54)
+     FDS:D                     0.268          Inst_cache_control/STATE_0
+    ----------------------------------------
+    Total                      9.762ns (5.795ns logic, 3.967ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Clock period: 11.202ns (frequency: 89.268MHz)
+  Total number of paths / destination ports: 3704 / 404
+-------------------------------------------------------------------------
+Delay:               11.202ns (Levels of Logic = 17)
+  Source:            Inst_cache_control/sys_icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:       Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO (FF)
+  Source Clock:      Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+  Destination Clock: Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: Inst_cache_control/sys_icon/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.514   1.074  U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (U0/U_ICON/iCORE_ID<0>)
+     LUT4:I0->O           32   0.612   1.103  U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT (U0/U_ICON/iCORE_ID_SEL<0>)
+     LUT4:I2->O           78   0.612   1.115  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE (CONTROL0<9>)
+     end scope: 'Inst_cache_control/sys_icon'
+     begin scope: 'Inst_cache_control/sys_ila'
+     LUT4:I2->O            1   0.612   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           3   0.399   0.603  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8>)
+     LUT3:I0->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5_G (N43)
+     MUXF5:I1->O           1   0.278   0.387  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5 (U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5)
+     LUT3:I2->O            1   0.612   0.360  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O21_SW0 (N40)
+     LUT4_L:I3->LO         1   0.612   0.103  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39 (U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39)
+     LUT4:I3->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O87 (U0/I_YES_D.U_ILA/U_STAT/TDO_next)
+     FDE:D                     0.268          U0/I_YES_D.U_ILA/U_STAT/U_TDO
+    ----------------------------------------
+    Total                     11.202ns (6.456ns logic, 4.746ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_cache_control/sys_icon/U0/iUPDATE_OUT'
+  Clock period: 2.202ns (frequency: 454.060MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.202ns (Levels of Logic = 1)
+  Source:            Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      Inst_cache_control/sys_icon/U0/iUPDATE_OUT rising
+  Destination Clock: Inst_cache_control/sys_icon/U0/iUPDATE_OUT rising
+
+  Data Path: Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD to Inst_cache_control/sys_icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.451  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.612   0.357  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.268          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.202ns (1.394ns logic, 0.808ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 290 / 170
+-------------------------------------------------------------------------
+Offset:              10.256ns (Levels of Logic = 17)
+  Source:            Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT (PAD)
+  Destination:       Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO (FF)
+  Destination Clock: Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT to Inst_cache_control/sys_ila/U0/I_YES_D.U_ILA/U_STAT/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN3:SHIFT    3   0.000   0.520  U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.612   1.225  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O           78   0.612   1.115  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE (CONTROL0<9>)
+     end scope: 'Inst_cache_control/sys_icon'
+     begin scope: 'Inst_cache_control/sys_ila'
+     LUT4:I2->O            1   0.612   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O           3   0.399   0.603  U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8> (U0/U_XST_CONTROLBUS_WORKAROUND/CONTROL_XST_WORKAROUND_O_cmp_eq0000_wg_cy<8>)
+     LUT3:I0->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5_G (N43)
+     MUXF5:I1->O           1   0.278   0.387  U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5 (U0/I_YES_D.U_ILA/U_STAT/U_SMUX/U_CS_MUX/I6.U_MUX64/Mmux_O_15_f5)
+     LUT3:I2->O            1   0.612   0.360  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O21_SW0 (N40)
+     LUT4_L:I3->LO         1   0.612   0.103  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39 (U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O39)
+     LUT4:I3->O            1   0.612   0.000  U0/I_YES_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O87 (U0/I_YES_D.U_ILA/U_STAT/TDO_next)
+     FDE:D                     0.268          U0/I_YES_D.U_ILA/U_STAT/U_TDO
+    ----------------------------------------
+    Total                     10.256ns (5.942ns logic, 4.314ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.514ns (Levels of Logic = 0)
+  Source:            Inst_cache_control/sys_icon/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1 (PAD)
+  Source Clock:      Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: Inst_cache_control/sys_icon/U0/U_ICON/U_TDO_reg to Inst_cache_control/sys_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.514   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN3:TDO1        0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS
+    ----------------------------------------
+    Total                      0.514ns (0.514ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.62 secs
+ 
+--> 
+
+
+Total memory usage is 638696 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  148 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
+

@@ -1,0 +1,12 @@
+Release 13.4 par O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+carnegie.ee.ryerson.ca::  Wed Oct 16 09:53:34 2019
+
+par -w -intstyle ise -ol high -t 1 Multiplexer2to1_map.ncd Multiplexer2to1.ncd
+Multiplexer2to1.pcf 
+
+
+Constraints file: Multiplexer2to1.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment /CMC/tools/xilinx/13.4/ISE_DS/ISE/.
+   "Multiplexer2to1" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5

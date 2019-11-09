@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer2to1.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer2to1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Multiplexer2to1.ngc Multiplexer2to1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Multiplexer2to1_map.ncd Multiplexer2to1.ngd Multiplexer2to1.pcf 
+par -w -intstyle ise -ol high -t 1 Multiplexer2to1_map.ncd Multiplexer2to1.ncd Multiplexer2to1.pcf 
+vhdtdtfi -prj CachePro -o /home/student1/mbhagat/coe758/CachePro/CachePro/Multiplexer2to1.vhi -module Multiplexer2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer2to1.vhd 

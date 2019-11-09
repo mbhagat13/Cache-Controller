@@ -1,0 +1,101 @@
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+vhdtdtfi -lib work str.vhd -lib work Multiplexer2to1.vhd -lib work Multiplexer1to2.vhd -lib work sdram_controller.vhd -lib work CPU_gen.vhd -lib work cache_control.vhd -lib work TOP.vhd -prj CachePro -o TOP.spl -module TOP -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e TOP.spl /home/student1/mbhagat/coe758/CachePro/CachePro/TOP.sym 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TOP.ucf -p xc3s500e-fg320-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.xst" -ofn "/home/student1/mbhagat/coe758/CachePro/CachePro/TOP.syr" 

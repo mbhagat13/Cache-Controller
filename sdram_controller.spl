@@ -1,0 +1,8 @@
+[Inputs]
+sdram_wr_rd_in
+sdram_mstrb
+=sdram_addr_in[15:0]=
+=sdram_din[7:0]=
+[Outputs]
+=sdram_dout[7:0]=
+[BiDir]
